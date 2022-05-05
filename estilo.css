@@ -1,0 +1,17 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+    margin: 10px;
+}
+a:link, a:active, a:visited{
+	color: #035c77;
+	text-decoration: none
+}
+a:hover{
+    text-decoration: underline;
+}
+h3, h2, h1{
+    color: #035c77;
+}
+.botao{
+    border-radius: 5px 5px;
+}

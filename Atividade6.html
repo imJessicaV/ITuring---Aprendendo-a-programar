@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="calculo.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/estilo.css" />
+  </head>
+  <body style="text-align: center">
+    <h1>Exercício IMC</h1>
+    <p>Resolva os exercícios a seguir alterando o arquivo script.js</p>
+    <ol style="list-style-type: none;">
+      <li>
+        - Implemente na função 'IMC' o cálculo do número.
+        <br />- A fórmula é peso / (altura * altura). <br />- Não esqueça que a
+        função IMC deve retornar esse valor.
+      </li>
+      <li>
+        - De acordo com a tabela abaixo, implemente a lógica da função 'faixaIMC'
+        para, <br />
+        recebendo o indice calculado no ex anterior como parametro,
+        <br />retornar a faixa que a pessoa se encontra.
+      </li>
+    </ol>
+
+    <h2>Tabela IMC</h2>
+    <img src="/img/imc1.png" alt="tabela imc" /><img
+      src="/img/imc.png"
+      alt="tabela imc2"
+    />
+
+    <h3>Exercício extra:</h3>
+    <p class="p1">
+      - Essa página não contém nenhuma estilização e como você pode vir tem
+      diversas tags que não vimos em aula. <br />Fique a vontade para explorar e
+      tentar entender oque elas fazem. Você pode consultar o
+      <a href="https://www.w3schools.com/html/default.asp"
+        >https://www.w3schools.com/html/default.asp</a
+      >
+      para te ajudar.
+    </p>
+
+    <p>
+      - Caso esteja confortável e queira se desafiar, crie um arquivo CSS nessa
+      pasta e modifique o design da página como julgar melhor.
+      <br />
+      Não se esqueça de importar o arquivo css no Head da página conforme vimos
+      em aula.
+    </p>
+
+    <h3>Calculadora de IMC</h3>
+    <form>
+      <label for="peso">Peso(Kg):</label>
+      <input type="text" id="peso" name="peso" />
+      <label for="altura">Altura(cm):</label>
+      <input type="text" id="altura" name="altura" />
+      <input
+        class="botao"
+        type="button"
+        onclick="mostrarResultadoIMC()"
+        value="calcular IMC"
+      />
+    </form>
+    <label>RESULTADO</label>
+    <br>
+    <textarea  name="" id="text_area" rows="1"></textarea>
+    <script src="calculo.js"></script>
+    <p id="resultado"></p>
+  </body> 
+</html>
